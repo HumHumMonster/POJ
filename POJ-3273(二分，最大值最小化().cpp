@@ -19,22 +19,8 @@ using namespace std ;
 const double PI = acos(-1.0) ;
 const double eps = 1e-8 ;
 
-inline int _max(int a , int b){return a > b ? a : b ;}
-inline int _min(int a , int b){return a < b ? a : b ;}
-inline int _abs(int a){return a > 0 ? a : -a ;}
-inline double _max(double a , double b){return a > b ? a : b ;}
-inline double _min(double a , double b){return a < b ? a : b ;}
-inline double _fabs(double a){return a > 0 ? a : -a ;}
 inline LL _max(LL a , LL b){return a > b ? a : b ;}
-inline LL _min(LL a , LL b){return a < b ? a : b ;}
-inline LL _labs(LL a){return a > 0 ? a : -a ;}
 
-int sgn(double x)   //判断正负，正为1，零为0，负为-1
-{
-    if (_fabs(x) < eps) return 0 ;
-    else if (x < 0) return -1 ;
-    else return 1 ;
-}
 const int maxn = 1e5 + 10 ;
 int n , m ;
 LL num[maxn] ;
@@ -61,8 +47,6 @@ bool check(LL x)
     else
         return false ;
 }
-
-
 
 int main ()
 {
